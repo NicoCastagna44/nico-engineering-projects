@@ -1,0 +1,51 @@
+clear
+clc
+close all
+
+model = "Full_system_tap";
+
+run('WeightCalcSingle.m')
+
+disp(weights)
+
+load_system(model);
+
+% Sweep frequencies
+freq = linspace(25e6,35e6,21);
+
+Vsi  = zeros(size(freq));
+Vres = zeros(size(freq));
+
+for k = 1:length(freq)
+
+    f_test = freq(k);
+
+    fprintf("Running %.4f MHz\n",f_test/1e6);
+
+    out = sim(model);
+
+    % Uncancelled SI
+    si = out.logsout.get("SI_output").Values;
+
+    % Residual after cancellation
+    res = out.logsout.get("cancel_output").Values;
+
+    % Use final 20% of simulation
+    idx_si  = si.Time  > 0.8*si.Time(end);
+    idx_res = res.Time > 0.8*res.Time(end);
+
+    Vsi(k)  = rms(si.Data(idx_si));
+    Vres(k) = rms(res.Data(idx_res));
+
+end
+
+% Cancellation depth
+Cancellation_dB = 20*log10(Vsi ./ Vres);
+
+figure
+plot(freq/1e6,Cancellation_dB,'LineWidth',1.5)
+grid on
+
+xlabel("Frequency (MHz)")
+ylabel("Cancellation (dB)")
+title("Cancellation vs Frequency")
