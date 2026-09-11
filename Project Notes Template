@@ -1,0 +1,242 @@
+# [Project Name]
+
+> **One-line summary:** Briefly describe what you designed, built, simulated, or investigated.
+
+## Project Overview
+
+**Status:** Planning / In Progress / Complete / On Hold
+**Started:** [Month Year]
+**Completed:** [Month Year or N/A]
+**Project Type:** RF / PCB / Embedded / Electronics / Semiconductor / DSP / Software / Other
+
+### Objective
+
+Describe the engineering problem and what you wanted to accomplish.
+
+Example questions:
+
+* What problem am I trying to solve?
+* Why is it useful or interesting?
+* What would a successful result look like?
+
+---
+
+## System / Design
+
+Describe the overall system and how it works.
+
+Include a block diagram, schematic, or system image when useful.
+
+![System Diagram](images/system-diagram.png)
+
+### Key Components
+
+| Component   | Part / Tool                      | Purpose   |
+| ----------- | -------------------------------- | --------- |
+| [Component] | [Part number]                    | [Purpose] |
+| [Component] | [Part number]                    | [Purpose] |
+| [Software]  | MATLAB / Altium / LTspice / etc. | [Purpose] |
+
+### Key Parameters
+
+| Parameter        |    Value |
+| ---------------- | -------: |
+| [Frequency]      | [30 MHz] |
+| [Supply Voltage] |    [5 V] |
+| [Bandwidth]      |    [...] |
+| [Other]          |    [...] |
+
+---
+
+## Theory / Design Approach
+
+Document the important engineering theory behind the project.
+
+### Key Equations
+
+Add only equations that are important for understanding or reproducing the design.
+
+Example:
+
+$$
+H(f) = \sum_{k=1}^{N} a_k e^{-j2\pi f\tau_k}
+$$
+
+where:
+
+* $a_k$ = [...]
+* $\tau_k$ = [...]
+* $f$ = [...]
+
+### Design Decisions
+
+Explain important choices and **why** you made them.
+
+* **[Decision 1]:** [Reason]
+* **[Decision 2]:** [Reason]
+* **[Decision 3]:** [Reason]
+
+---
+
+## Implementation
+
+Describe what you actually built, simulated, or programmed.
+
+### Hardware
+
+* [PCB / breadboard / test setup]
+* [Important ICs/modules]
+* [Power supplies]
+* [Test equipment]
+
+### Software
+
+* [MATLAB]
+* [Simulink]
+* [Arduino/C++]
+* [Python]
+* [Altium]
+* [Other]
+
+### Repository Files
+
+```text
+project-name/
+├── README.md
+├── images/
+├── hardware/
+├── software/
+├── simulation/
+├── data/
+└── references/
+```
+
+Modify the folders to fit the project.
+
+---
+
+## Testing & Results
+
+### Test Setup
+
+Describe how you evaluated the design.
+
+**Equipment:**
+
+* [...]
+* [...]
+* [...]
+
+**Test conditions:**
+
+* [...]
+* [...]
+
+### Results
+
+Summarize the most important quantitative results.
+
+| Metric   | Target | Result |
+| -------- | -----: | -----: |
+| [Metric] |  [...] |  [...] |
+| [Metric] |  [...] |  [...] |
+
+Add useful plots, scope captures, PCB images, or photographs here.
+
+![Result](images/result.png)
+
+### Interpretation
+
+Explain what the results actually mean.
+
+* What worked?
+* What didn't?
+* Did the result match theory or simulation?
+* What limited performance?
+
+---
+
+## Problems & Debugging
+
+### [Problem 1]
+
+**Symptom:**
+What went wrong?
+
+**Cause:**
+What ultimately caused it?
+
+**Fix:**
+What solved or improved it?
+
+**Lesson:**
+What would I do differently next time?
+
+### [Problem 2]
+
+**Symptom:** [...]
+
+**Cause:** [...]
+
+**Fix:** [...]
+
+**Lesson:** [...]
+
+---
+
+# Key Lessons
+
+This should be one of the most important sections of the project.
+
+### 1. [Lesson]
+
+Explain the engineering insight in a few sentences.
+
+### 2. [Lesson]
+
+Explain what you learned and why it matters.
+
+### 3. [Lesson]
+
+Explain what you would carry into another project.
+
+---
+
+## What Didn't Work
+
+Keep track of approaches that seemed reasonable but failed.
+
+* **[Approach]:** Why it didn't work.
+* **[Approach]:** What happened instead.
+* **[Approach]:** What you would try next time.
+
+This section prevents you from repeating old mistakes.
+
+---
+
+## Future Improvements
+
+If I continued this project, I would:
+
+* [ ] [...]
+* [ ] [...]
+* [ ] [...]
+* [ ] [...]
+
+---
+
+## References
+
+Useful datasheets, papers, application notes, textbooks, or other resources.
+
+1. [Reference]
+2. [Reference]
+3. [Reference]
+
+---
+
+## Final Takeaway
+
+In 2–4 sentences, summarize the project from an engineering perspective:
+
+**What did I build, what was the result, and what is the single most important thing I learned?**
